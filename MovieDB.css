@@ -1,0 +1,74 @@
+.movies {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.movie {
+    display: flex;
+
+    /* set the items position on the main axis */
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    
+    
+    /* position: sticky;
+    top: 0;
+    background-color: #f0f0f0;
+    padding: 10px; */
+  }
+
+
+
+.movie_poster {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+.details_movie_poster{
+    object-fit: contain;
+    max-width: 50%;
+    max-height: 50%;
+    overflow-x:hidden;
+    overflow-y:hidden;
+
+}
+
+
+.liked .ion_star1{
+    color: darkgrey;
+}
+
+.yes .ion_star1{
+    color: red;
+}
+
+/* .ion_star1{
+    color: darkgray;
+} */
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+
+#closeButton {
+    cursor: pointer;
+    position: absolute; /* Added for positioning */
+    top: 0; /* Positioned at the top */
+    right: 0; /* Positioned at the right */
+    padding: 10px;
+
+/* Add your styles for the close button */
+}

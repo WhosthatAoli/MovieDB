@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My HTML5 Document</title>
+  <link rel="stylesheet" href="MovieDB.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.min.css"
+  integrity="sha512-JApjWRnfonFeGBY7t4yq8SWr1A6xVYEJgO/UMIYONxaR3C9GETKUg0LharbJncEzJF5Nmiv+Pr5QNulr81LjGQ=="
+  crossorigin="anonymous"
+/>
+
+</head>
+<body>
+  <!-- Content of the HTML document -->
+    <h1>The Movie DB</h1>
+    <span class = "home">HOME</span>
+    <span class = "liked_list">LIKED</span>
+    <div class="dropdown">
+        <label for="movies">Choose kinds:</label>
+        <select id="dropdown_list" name="movies">
+          <option value="popular">Popular</option>
+          <option value="now_playing">Now playing</option>
+          <option value="top_rated">Top rated</option>
+          <option value="upcoming">Upcoming</option>
+        </select>
+    </div>
+
+    <div class="pagination">
+        <button class = 'prev_button'>prev</button>
+        <span class = "pages"></span>
+        <button class = 'next_button'>next</button>
+    </div>
+
+    <div class="movies"></div>
+
+    <div class = "popupContainer"></div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
